@@ -2,8 +2,8 @@
     --vollkorn: 'Vollkorn', serif;
     --roxo-normal: #8844ee;
     --roxo-claro: #b07dfb;
-    --sidenav-background: #fafbfc;
-    --sidenav-background-hover: #b07dfb;
+    --branquinho: #fafbfc;
+    --roxo-hover: #b07dfb;
 }
 
 *{
@@ -21,7 +21,9 @@ body{
     font-family: var(--vollkorn);
 }
 img{
+    display: block;
     max-width: 100%;
+    border-radius: 5px;
 }
 
 /*GRID GERAL*/
@@ -78,7 +80,7 @@ img{
 /*sidenav*/
 .sidenav{
     grid-area: sidenav;
-    background-color: var(--sidenav-background);
+    background-color: var(--branquinho);
     padding: 30px;
 }
 
@@ -94,17 +96,34 @@ img{
 }
 
 .sidenav li a:hover {
-    background-color: var(--sidenav-background-hover);
+    background-color: var(--roxo-hover);
 }
 
+
+/*CONTENT*/
 .content{
     grid-area: content;
 }
 
+/*ANUNCIOS*/
 .anuncios{
     grid-area: anuncios;
+    background-color: var(--branquinho);
+    display: grid;
+    align-content: start;
+    padding: 30px;
+    grid-gap: 30px;
 }
 
+/*FOOTER*/
 .footer{
     grid-area: footer;
+    background: linear-gradient(135deg, var(--roxo-normal), var(--roxo-claro));
+    
+}
+
+.footer p {
+    color: white;
+    text-align: center;
+    padding: 30px;
 }
