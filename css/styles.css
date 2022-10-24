@@ -124,6 +124,78 @@ img{
     align-self: end;
 }
 
+/*ESTILOS GERAIS DO CONTENT */
+
+p{
+    font-size: 1.2em;
+    line-height: 1.6;
+    letter-spacing: 0.005em;
+    color: rgba(0,0,0,0.7);
+}
+
+.informacoes p + p {
+    margin-top: 30px;
+}
+
+/*TÍTULO*/
+
+.titulo {
+    color: var(--roxo-claro);
+}
+
+.titulo h1 {
+    font-size: 3.75em;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.titulo span{
+    font-size: 0.875em;
+    font-style: italic;
+}
+
+/*CARACTERISTICAS*/
+
+.caracteristicas {
+    display: flex ;
+    align-items: flex-start;
+}
+
+.caracteristicas > div {
+    width: 80px;
+    text-align: center;
+    background:linear-gradient(135deg, var(--roxo-normal), var(--roxo-claro));
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px 0 rgba(44, 44, 44, 0.15);
+    position: relative;
+}
+
+.caracteristicas > div:first-child{
+    margin-right: 30px;
+}
+
+.numero {
+    font-size: 3em ;
+    color: var(--roxo-claro);
+    line-height: 1;
+    margin: 10px auto;
+}
+
+.caracteristicas span {
+    display: block;
+    color: var(--roxo-claro);
+    
+}
+
+.rotulo{
+    background: white;
+    border-radius: 0 0 5px 5px;
+    padding: 5px 0;
+    position: relative;
+    top: 2px;
+    
+}
+
 /*ANUNCIOS*/
 .anuncios{
     grid-area: anuncios;
