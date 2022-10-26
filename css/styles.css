@@ -184,7 +184,7 @@ p{
 .caracteristicas span {
     display: block;
     color: var(--roxo-claro);
-    
+    max-width: 16em;
 }
 
 .rotulo{
@@ -196,6 +196,44 @@ p{
     
 }
 
+/*destaques*/
+
+.destaques{
+    font-size: 0.875em;
+    color: var(--roxo-claro);
+}
+
+/*Citação*/
+/*Por padrão o alinhamento(aling) vem definido como stratch*/
+.citacao, .atributos {
+    align-self: start;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px 0px rgba(44,44,44,0.15);
+    background: linear-gradient(135deg, var(--roxo-normal), var(--roxo-claro));
+}
+
+.citacao p {
+    text-align: center;
+    font-style: italic;
+    font-size: 1.5em;
+    color: white;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/*ATRIBUTOS*/
+
+.atributos li {
+    color: white;
+    font-family: Courier, monospace;
+    font-size: 1.2em;
+    padding: 15px;
+}
+
+.atributos li + li {
+    border-top: 2px solid var(--roxo-claro);
+}
 /*ANUNCIOS*/
 .anuncios{
     grid-area: anuncios;
