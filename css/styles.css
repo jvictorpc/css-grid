@@ -22,7 +22,7 @@ body{
 }
 img{
     display: block;
-    max-width: 100%;
+    width: 100%;
     border-radius: 5px;
 }
 
@@ -206,6 +206,11 @@ img{
     align-self: end;
 }
 
+@media screen and (max-width: 600px){
+    .content{
+        grid-template-columns: auto;
+    }
+}
 /*ESTILOS GERAIS DO CONTENT */
 
 p{
@@ -324,7 +329,9 @@ p{
     align-content: start;
     padding: 30px;
     grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(15px, 1fr));
 }
+
 
 /*FOOTER*/
 .footer{
